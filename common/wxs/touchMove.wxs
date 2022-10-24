@@ -1,0 +1,11 @@
+function handleTouchstart(event){
+  console.log(event);
+}
+function handleTouchend(event){
+  console.log(event);
+}
+
+module.exports={
+  handleTouchend,
+  handleTouchstart
+}

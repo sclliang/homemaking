@@ -1,0 +1,37 @@
+/**index.wxss**/
+@import "./index.skeleton.wxss";
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.nav {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
+.category {
+  padding: 30rpx 0 30rpx 30rpx;
+}
+.swiper-item {
+  border-radius: 20rpx;
+  background-image: linear-gradient(to right, #e68d44, #eb6d59);
+  height: 150rpx;
+  width: 300rpx;
+}
+.item-title {
+  position: absolute;
+  color: #fff;
+  top: 20rpx;
+  left: 20rpx;
+  font-weight: bold;
+}
+
+.tab-panel {
+  width: 100%;
+  background-color: #f1f1f0;
+}
+.bottom {
+  height: 100rpx;
+}

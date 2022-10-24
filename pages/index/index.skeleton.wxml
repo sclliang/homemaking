@@ -1,0 +1,159 @@
+<!--
+此文件为开发者工具生成，生成时间: 2022/10/25上午1:19:57
+使用方法：
+在 C:\Users\sclli\Desktop\homemaking\pages\index\index.wxml 引入模板
+
+```
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 C:\Users\sclli\Desktop\homemaking\pages\index\index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="container">
+      <view class="nav">
+        <view is="components/tabs/tabs">
+          <view class="tabs--container">
+            <view class="tabs--tabs">
+              <view class="tabs--tab-item" data-index="0">
+                <view class="tabs--tab-label tabs--index-tab sk-transparent sk-text-14-2857-151 sk-text">全部服务</view>
+                <view class="tabs--divider"></view>
+              </view>
+              <view class="tabs--tab-item" data-index="1">
+                <view class="tabs--tab-label sk-transparent sk-text-14-2857-651 sk-text">在提供</view>
+              </view>
+              <view class="tabs--tab-item" data-index="2">
+                <view class="tabs--tab-label sk-transparent sk-text-14-2857-245 sk-text">正在找</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="category">
+        <swiper display-multiple-items="2" next-margin="60rpx" style="height: 75px" current="0" autoplay="false">
+          <swiper-item data-item="[object Object]" style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+            <view class="swiper-item sk-image">
+              <text class="item-title sk-transparent sk-text-14-2857-624 sk-text">全部</text>
+            </view>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="panel">
+        <swiper class="tab-panel" current="0" style="height: 1310px" autoplay="false">
+          <swiper-item style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+            <view is="components/service-item/service-item">
+              <view class="item--container">
+                <view class="item--left">
+                  <image class="item--image sk-image" mode="aspectFill"></image>
+                  <view class="item--state sk-transparent sk-text-14-2857-139 sk-text">在提供</view>
+                </view>
+                <view class="item--right">
+                  <view class="item--title">
+                    <view class="item--title-info sk-transparent sk-text-14-2857-3 sk-text">小区内外卖代拿</view>
+                    <view class="item--title-type">
+                      <view is="components/icon/icon" color="#EFEFEF" class="sk-image"></view>
+                      <text class="item--icon-type sk-transparent sk-text-14-2857-725 sk-text">搬运</text>
+                    </view>
+                  </view>
+                  <view class="item--user">
+                    <image class="item--avatar-pic sk-image"></image>
+                    <text class="item--nickname sk-transparent sk-text-14-2857-617 sk-text">SeanHo</text>
+                    <view class="item--score sk-transparent sk-opacity">0</view>
+                  </view>
+                  <view class="item--time sk-transparent sk-text-14-2857-215 sk-text">2022-10-24 20:38:24</view>
+                  <view class="item--price-sales">
+                    <text class="item--price sk-transparent sk-text-14-2857-636 sk-text">￥ 2.00</text>
+                    <text class="item--sales sk-transparent sk-text-14-2857-188 sk-text">已售 0</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view is="components/service-item/service-item">
+              <view class="item--container">
+                <view class="item--left">
+                  <image class="item--image sk-image" mode="aspectFill"></image>
+                  <view class="item--state sk-transparent sk-text-14-2857-302 sk-text">在提供</view>
+                </view>
+                <view class="item--right">
+                  <view class="item--title">
+                    <view class="item--title-info sk-transparent sk-text-14-2857-24 sk-text">电脑维修服务</view>
+                    <view class="item--title-type">
+                      <view is="components/icon/icon" color="#EFEFEF" class="sk-image"></view>
+                      <text class="item--icon-type sk-transparent sk-text-14-2857-825 sk-text">家电维修</text>
+                    </view>
+                  </view>
+                  <view class="item--user">
+                    <image class="item--avatar-pic sk-image"></image>
+                    <text class="item--nickname sk-transparent sk-text-14-2857-482 sk-text">赵云龙</text>
+                    <view class="item--score sk-transparent sk-opacity">0</view>
+                  </view>
+                  <view class="item--time sk-transparent sk-text-14-2857-720 sk-text">2022-09-16 21:23:26</view>
+                  <view class="item--price-sales">
+                    <text class="item--price sk-transparent sk-text-14-2857-565 sk-text">￥ 50.00</text>
+                    <text class="item--sales sk-transparent sk-text-14-2857-781 sk-text">已售 0</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view is="components/service-item/service-item">
+              <view class="item--container">
+                <view class="item--left">
+                  <image class="item--image sk-image" mode="aspectFill"></image>
+                  <view class="item--state sk-transparent sk-text-14-2857-414 sk-text">正在找</view>
+                </view>
+                <view class="item--right">
+                  <view class="item--title">
+                    <view class="item--title-info sk-transparent sk-text-14-2857-924 sk-text">维护保养摩托车</view>
+                    <view class="item--title-type">
+                      <view is="components/icon/icon" color="#EFEFEF" class="sk-image"></view>
+                      <text class="item--icon-type sk-transparent sk-text-14-2857-708 sk-text">汽修</text>
+                    </view>
+                  </view>
+                  <view class="item--user">
+                    <image class="item--avatar-pic sk-image"></image>
+                    <text class="item--nickname sk-transparent sk-text-14-2857-341 sk-text">Mr.Li</text>
+                    <view class="item--score sk-transparent sk-opacity">0</view>
+                  </view>
+                  <view class="item--time sk-transparent sk-text-14-2857-396 sk-text">2022-09-09 22:46:29</view>
+                  <view class="item--price-sales">
+                    <text class="item--price sk-transparent sk-text-14-2857-419 sk-text">￥ 500.00</text>
+                    <text class="item--sales sk-transparent sk-text-14-2857-758 sk-text">已售 0</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view is="components/service-item/service-item">
+              <view class="item--container">
+                <view class="item--left">
+                  <image class="item--image sk-image" mode="aspectFill"></image>
+                  <view class="item--state sk-transparent sk-text-14-2857-724 sk-text">在提供</view>
+                </view>
+                <view class="item--right">
+                  <view class="item--title">
+                    <view class="item--title-info sk-transparent sk-text-14-2857-107 sk-text">MacBook 日常维护保养</view>
+                    <view class="item--title-type">
+                      <view is="components/icon/icon" color="#EFEFEF" class="sk-image"></view>
+                      <text class="item--icon-type sk-transparent sk-text-14-2857-444 sk-text">家电维修</text>
+                    </view>
+                  </view>
+                  <view class="item--user">
+                    <image class="item--avatar-pic sk-image"></image>
+                    <text class="item--nickname sk-transparent sk-text-14-2857-463 sk-text">Mr.Li</text>
+                    <view class="item--score sk-transparent sk-opacity">0</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+  </view>
+</template>

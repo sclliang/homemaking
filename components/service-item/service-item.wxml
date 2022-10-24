@@ -1,0 +1,25 @@
+<view class="container" bindtap="onServiceItemClick">
+  <view class="left">
+    <image class="image" mode="aspectFill" src="{{itemData.cover_image.path}}"></image>
+    <view class="state">{{itemData.type===1?'在提供':'正在找'}}</view>
+  </view>
+  <view class="right">
+    <view class="title">
+      <view class="title-info">{{itemData.title}}</view>
+      <view class="title-type">
+        <icon name="icon-biaoqian" color="#f27013" size="32"></icon> <text class="icon-type">{{itemData.category.name}}</text>
+      </view>
+    </view>
+    <view class="user">
+      <image class="avatar-pic" src="{{itemData.publisher.avatar}}"></image>
+      <text class="nickname">{{itemData.publisher.nickname}}</text>
+      <view class="score">{{itemData.score}}</view>
+    </view>
+    <view class="time">{{itemData.create_time}}</view>
+    <view class="price-sales">
+      <text class="price">￥ {{itemData.price}}</text>
+      <text class="sales">已售 {{itemData.sales_volume}}</text>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,3 @@
+<!--自定义图标组件-->
+<view class="iconfont {{name}}" style="font-size: {{size}}rpx;color:{{color}};"></view>
+

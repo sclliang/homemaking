@@ -1,0 +1,7 @@
+/* components/page-state/page-state.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #888888;
+}

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "tabs": "/components/tabs/tabs",
+    "service-item": "/components/service-item/service-item"
+  },
+  "navigationBarBackgroundColor": "#f6d068",
+  "navigationBarTitleText": "服务广场",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "onReachBottomDistance": 50
+}

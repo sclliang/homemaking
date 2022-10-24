@@ -1,0 +1,21 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "homemaking",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "subpkg/service-detail/service-detail",
+          "query": "data=%7B%22id%22%3A13%2C%22type%22%3A1%2C%22designated_place%22%3A1%2C%22title%22%3A%22%E5%85%A8%E5%B1%8B%E6%B7%B1%E5%BA%A6%E6%B8%85%E6%B4%81%22%2C%22description%22%3A%22%E4%B8%93%E4%B8%9A%E5%9B%A2%E9%98%9F%E3%80%81%E4%B8%93%E4%B8%9A%E4%BA%BA%E5%91%98%E3%80%81%E4%B8%93%E4%B8%9A%E8%AE%BE%E5%A4%87%EF%BC%8C%E7%BB%99%E4%BD%A0%E7%9A%84%E7%88%B1%E5%B1%8B%E5%81%9A%E4%B8%AASPA%E3%80%82%5Cn%5Cn80~100%E3%8E%A1%E5%AE%A4%E5%86%85%E5%85%A8%E5%B1%8B%E6%B7%B1%E5%BA%A6%E6%B8%85%E6%B4%81%EF%BC%8C%E4%BC%98%E6%83%A0%E4%B8%80%E5%8F%A3%E4%BB%B7%201800%20%E5%85%83%E3%80%82%5Cn%5Cn%E8%87%AA%E7%94%B1%E9%80%89%E6%8B%A9%E6%97%B6%E9%97%B4%EF%BC%8C%E8%8A%82%E5%81%87%E6%97%A5%E5%90%8C%E4%BB%B7%E3%80%82%22%2C%22price%22%3A%221800.00%22%2C%22score%22%3A%220%22%2C%22sales_volume%22%3A0%2C%22create_time%22%3A%222021-04-29%2016%3A25%3A16%22%2C%22publisher%22%3A%7B%22id%22%3A1%2C%22order_no%22%3A%221567813156878555%22%2C%22nickname%22%3A%22%E6%B2%81%E5%A1%B5%22%2C%22avatar%22%3A%22https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FUSdoZogY5QAJYPgvIf3uviaafzEKQaSXSEciaFVNgLibxMHffmIpJfoA5ic5pHf6aFPAnNcWQeedBPJYvUibSvkTWLw%2F132%22%2C%22real_name%22%3A%22%E6%B2%81%E5%A1%B5%22%2C%22gender%22%3A0%2C%22tel%22%3A%2218888888888%22%7D%2C%22category%22%3A%7B%22id%22%3A1%2C%22name%22%3A%22%E4%BF%9D%E6%B4%81%22%7D%2C%22cover_image%22%3A%7B%22id%22%3A18%2C%22path%22%3A%22http%3A%2F%2Fqinchenju.com%2Fhomemaking%2Fstorage%2F20210429%2F8d7cf02a71f2b9dfae0aee6635b924ae.jpeg%22%7D%7D",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

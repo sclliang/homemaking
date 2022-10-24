@@ -1,0 +1,37 @@
+<!-- 服务信息 -->
+<view class="container">
+  <view class="service-info">
+    <view class="cover-image">
+      <image class="image" mode="widthFix" src="{{itemData.cover_image.path}}"></image>
+    </view>
+    <view class="info">
+      <view class="title">
+        <view class="title-info">{{itemData.title}}</view>
+        <view class="title-type">
+          <icon name="icon-biaoqian" color="#f27013" size="32"></icon> <text class="icon-type">{{itemData.category.name}}</text>
+        </view>
+      </view>
+      <view class="user">
+        <image class="avatar-pic" src="{{itemData.publisher.avatar}}"></image>
+        <text class="nickname">{{itemData.publisher.nickname}}</text>
+        <view class="score">{{itemData.score}}</view>
+      </view>
+      <view class="time">{{itemData.create_time}}</view>
+      <view class="price-sales">
+        <text class="price">￥ {{itemData.price}}</text>
+        <text class="sales">已售 {{itemData.sales_volume}}</text>
+      </view>
+      <view class="show-more">{{itemData.description}}</view>
+
+    </view>
+  </view>
+  <view class="service-status">
+    <text class="service-status-title">服务状态</text>
+    <text class="status">已发布</text>
+  </view>
+  <view class="rating-list">
+    <view class="rating-title">历史评价</view>
+      <view class="line"></view>
+  </view>
+  <view class="action-bar"></view>
+</view>
