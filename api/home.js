@@ -25,3 +25,14 @@ export function getServiceDetail(id) {
     url: "/v1/service/" + id,
   });
 }
+// 获取服务评价
+export function getServiceRating({ service_id, page, count }) {
+  return request({
+    url: "/v1/rating/service",
+    data: {
+      service_id,
+      page,
+      count,
+    },
+  });
+}

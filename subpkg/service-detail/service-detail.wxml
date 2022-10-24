@@ -1,5 +1,5 @@
-<!-- 服务信息 -->
 <view class="container">
+  <!-- 服务信息 -->
   <view class="service-info">
     <view class="cover-image">
       <image class="image" mode="widthFix" src="{{itemData.cover_image.path}}"></image>
@@ -8,7 +8,8 @@
       <view class="title">
         <view class="title-info">{{itemData.title}}</view>
         <view class="title-type">
-          <icon name="icon-biaoqian" color="#f27013" size="32"></icon> <text class="icon-type">{{itemData.category.name}}</text>
+          <icon name="icon-biaoqian" color="#f27013" size="32"></icon>
+          <text class="icon-type">{{itemData.category.name}}</text>
         </view>
       </view>
       <view class="user">
@@ -22,16 +23,53 @@
         <text class="sales">已售 {{itemData.sales_volume}}</text>
       </view>
       <view class="show-more">{{itemData.description}}</view>
-
     </view>
   </view>
-  <view class="service-status">
+  <!-- 发布状态 -->
+  <view class="service-status" wx:if="{{isPublisher}}">
     <text class="service-status-title">服务状态</text>
-    <text class="status">已发布</text>
+    <text class="status">{{itemData.status===2?'已发布':'待发布'}}</text>
   </view>
+  <!-- 评论 -->
   <view class="rating-list">
     <view class="rating-title">历史评价</view>
-      <view class="line"></view>
+    <view class="line"></view>
+    <view class="rating-item" wx:if="{{ratingList.length>0}}">
+      <block wx:for="{{ratingList}}" wx:key="index">
+        <view class="userInfo">
+          <view class="user">
+            <image src="{{item.author.avatar}}" class="avatar" />
+            <text>{{item.author.nickname}}</text>
+          </view>
+          <view class="create-time">{{item.create_time}}</view>
+        </view>
+        <view class="star">
+          <text>评分:</text>
+          <block wx:for="{{item.score}}" wx:key="yellow" wx:for-index="yellow">
+            <icon name="icon-star" class="icon" color="#f8d46f"></icon>
+          </block>
+          <block wx:for="{{5-item.score}}" wx:for-index="gay" wx:key="gay">
+            <icon name="icon-star" class="icon" color="#666"></icon>
+          </block>
+        </view>
+        <view class="text">
+          {{item.content}}
+          <view wx:if="{{item.illustration&&item.illustration.length>0}}" class="illustration-image">
+            <block wx:for="{{item.illustration}}" wx:for-index="pic" wx:for-item="src" wx:key="pic">
+              <image bind:tap="handleImageClick" data-item="{{item.illustration}}" data-index="{{pic}}" src="{{src}}" class="pic" mode="aspectFill" />
+            </block>
+          </view>
+        </view>
+        <view class="line"></view>
+      </block>
+    </view>
+    <view class="no-rating" wx:else>暂无评论</view>
   </view>
-  <view class="action-bar"></view>
+  <!-- 发布按钮 -->
+  <view class="h"></view>
+  <view class="action-bar">
+    <button class="btn-info">取消服务</button>
+    <button class="btn-info">修改服务</button>
+    <button class="btn-stop">暂停发布</button>
+  </view>
 </view>

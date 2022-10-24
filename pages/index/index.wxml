@@ -1,23 +1,23 @@
 <import src="index.skeleton.wxml" />
 <template is="skeleton" wx:if="{{loading}}" />
-
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
   <view class="nav">
     <tabs bindclick="onHandleNavBarClick" currentIndex="{{currentIndex}}" tabs="{{tabs}}"></tabs>
   </view>
-
-  <!--  滑动 swiper-->
-  <view class="category" wx:if="{{swiperList.length>1}}">
+  <!-- 滑动 swiper -->
+  <view class="category" wx:if="{{swiperList.length>2}}">
     <swiper style="height: 150rpx" display-multiple-items="{{2}}" next-margin="60rpx">
-      <swiper-item wx:for="{{swiperList}}" wx:key="index" bindtap="handleSwiperItem" data-item="{{item}}">
-        <view class="swiper-item">
-          <text class="item-title">{{item.name}}</text>
-        </view>
-      </swiper-item>
+      <block wx:for="{{swiperList}}" wx:key="index">
+        <swiper-item bindtap="handleSwiperItem" data-item="{{item}}">
+          <view class="swiper-item">
+            <text class="item-title">{{item.name}}</text>
+          </view>
+        </swiper-item>
+      </block>
     </swiper>
   </view>
-  <!--  内容区域-->
+  <!-- 内容区域 -->
   <view class="panel" wx:if="{{serviceList.length>0}}">
     <swiper class="tab-panel" current="{{currentIndex}}" bindchange="currentChange" style="height: {{serviceList.length*260+20+'rpx'}}">
       <block wx:for="{{tabs}}" wx:key="id" wx:for-item="tab">
@@ -28,11 +28,7 @@
         </swiper-item>
       </block>
     </swiper>
-
   </view>
   <page-state top="100" show="{{serviceList.length===0&&loading===false}}" title="暂时没有服务"></page-state>
-
-
 </view>
-
 <view class="bottom"></view>
